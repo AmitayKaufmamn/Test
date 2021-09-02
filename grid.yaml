@@ -1,0 +1,12 @@
+#This is an example yaml file for iris
+parameters:
+  - param_name: "partition_size"
+    type: "float"
+    min: 0.6 # inclusive
+    max: 0.9 # not inclusive
+    scale: "linear"
+    steps: 4 # The number of linear steps to produce.
+
+  - param_name: "folds"
+    type: "categorical"
+    values: ["5", "10", "15"]
